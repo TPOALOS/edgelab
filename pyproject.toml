@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edgelab"
+version = "1.0.0"
+description = "A trial ledger and an honest edge report for trading ideas: counts every variant you try, tests a holdout, stresses costs. Pure Python, no dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "TPOALOS"}]
+keywords = ["backtesting", "trading", "quant", "deflated-sharpe", "overfitting", "multiple-testing", "holdout"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+
+[project.urls]
+Homepage = "https://github.com/TPOALOS/edgelab"
+Issues = "https://github.com/TPOALOS/edgelab/issues"
+
+[project.scripts]
+edgelab = "edgelab.cli:main"
+
+[tool.setuptools]
+packages = ["edgelab"]
